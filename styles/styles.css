@@ -6,3 +6,8 @@ img.airbnbimage {
   background-size: cover;
   height: 100vh;
 }
+p {
+}
+.error {
+  font-family: 'Courier New', Monospace;
+}
