@@ -129,29 +129,31 @@
             </div>
             <div>
               <h3>0 Reviews</h3>
-              <label for="Review-box" class="form-label"></label>
-              <small> Leave a Review</small>
-              <textarea rows="8" class="form-control mb-2"></textarea>
-              <input
-                type="radio"
-                class="btn-check"
-                name="options"
-                id="option1"
-                autocomplete="off"
-                checked
-              />
-              <label class="btn btn-light" for="option1">👍</label>
-              <input
-                type="radio"
-                class="btn-check"
-                name="options"
-                id="option2"
-                autocomplete="off"
-              />
-              <label class="btn btn-light" for="option2">👎</label>
-              <div>
-                <button type="button" class="btn btn-success">Submit</button>
-              </div>
+              <form>
+                <label for="Review-box" class="form-label"></label>
+                <small> Leave a Review</small>
+                <textarea rows="8" class="form-control mb-2"></textarea>
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="options"
+                  id="option1"
+                  autocomplete="off"
+                  checked
+                />
+                <label class="btn btn-light" for="option1">👍</label>
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="options"
+                  id="option2"
+                  autocomplete="off"
+                />
+                <label class="btn btn-light" for="option2">👎</label>
+                <div>
+                  <button class="btn btn-success">Submit</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -170,7 +172,7 @@
                       placeholder="Send the host this message"
                     ></textarea>
                   </form>
-                  <button type="button" class="btn btn-success">
+                  <button class="btn btn-success">
                     Request Booking
                   </button>
                 </div>

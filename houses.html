@@ -10,6 +10,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/af3685eef2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav>
@@ -19,8 +23,8 @@
             <img class="airbnbimage" src="./images/logo-airbnb.png" />
           </div>
           <div class="col text-end pt-2">
-            <button type="button" class="btn btn-light">Joe Romero</button>
-            <button type="button" class="btn btn-light">Logout</button>
+            <button class="btn btn-light">Joe Romero</button>
+            <button class="btn btn-light">Logout</button>
           </div>
         </div>
       </div>
@@ -28,76 +32,72 @@
     <!-- filter -->
     <div class="filter bg-light pt-2">
       <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="input-group mb-3">
-              <span class="input-group-text">@</span>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Any Location</option>
-                <option value="1">Koh Samui</option>
-                <option value="2">Koh Phangan</option>
-                <option value="3">Bali</option>
-              </select>
+        <form>
+          <div class="row">
+            <div class="col">
+              <div class="input-group mb-3">
+                <span class="input-group-text">@</span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Any Location</option>
+                  <option value="1">Koh Samui</option>
+                  <option value="2">Koh Phangan</option>
+                  <option value="3">Bali</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="input-group mb-3">
+                <span class="input-group-text">@</span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Bedrooms</option>
+                  <option value="1">One Bedroom</option>
+                  <option value="2">Two Bedroom</option>
+                  <option value="3">Three Bedroom</option>
+                  <option value="4">Four Bedroom +</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="input-group mb-3">
+                <span class="input-group-text">@</span>
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="max price"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="input-group mb-3">
+                <span class="input-group-text">@</span>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Price (low to high)</option>
+                  <option value="1">$100</option>
+                  <option value="2">$100-$300</option>
+                  <option value="3">$300-$400</option>
+                  <option value="4">$400 +</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Search" />
+              </div>
+            </div>
+            <div class="col">
+              <button type="submit" class="btn btn-success">Search</button>
             </div>
           </div>
-          <div class="col">
-            <div class="input-group mb-3">
-              <span class="input-group-text">@</span>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Bedrooms</option>
-                <option value="1">One Bedroom</option>
-                <option value="2">Two Bedroom</option>
-                <option value="3">Three Bedroom</option>
-                <option value="4">Four Bedroom +</option>
-              </select>
-            </div>
-          </div>
-          <div class="col">
-            <div class="input-group mb-3">
-              <span class="input-group-text">@</span>
-              <input
-                type="number"
-                class="form-control"
-                placeholder="max price"
-                aria-label="Username"
-                aria-describedby="basic-addon1"
-              />
-            </div>
-          </div>
-          <div class="col">
-            <div class="input-group mb-3">
-              <span class="input-group-text">@</span>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Price (low to high)</option>
-                <option value="1">>$100</option>
-                <option value="2">$100-$300</option>
-                <option value="3">$300-$400</option>
-                <option value="4">$400 +</option>
-              </select>
-            </div>
-          </div>
-          <div class="col">
-            <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1">@</span>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Username"
-                aria-label="Username"
-                aria-describedby="basic-addon1"
-              />
-            </div>
-          </div>
-          <div class="col">
-            <button type="button" class="btn btn-success">Search</button>
-          </div>
-        </div>
+        </form>
       </div>
     </div>
     <!-- CARDS -->
     <div class="container pt-3">
       <div class="row row-cols-5 row-cols-md-4 g-3">
-        <div class="col" style="width: 19rem;">
+        <div class="col">
           <div class="card h-100">
             <img
               src="https://res.cloudinary.com/dsko6ntfj/image/upload/v1640295026/portal/web%20development%20beginners/05%20Project%20Airbnb/house%2001/house_01_01.png"
@@ -165,7 +165,6 @@
             <img
               src="https://res.cloudinary.com/dsko6ntfj/image/upload/v1640295027/portal/web%20development%20beginners/05%20Project%20Airbnb/house%2007/house_07_01.png"
               class="card-img-top"
-              alt="..."
             />
             <div class="card-body">
               <small class="text-start"> 📍 Koh Phangan • 6 Rooms</small>
@@ -181,7 +180,6 @@
             <img
               src="https://res.cloudinary.com/dsko6ntfj/image/upload/v1640295027/portal/web%20development%20beginners/05%20Project%20Airbnb/house%2005/house_05_01.png"
               class="card-img-top"
-              alt="..."
             />
             <div class="card-body">
               <small class="text-start"> 📍 Koh Phangan • 6 Rooms</small>
@@ -197,7 +195,6 @@
             <img
               src="https://res.cloudinary.com/dsko6ntfj/image/upload/v1640295027/portal/web%20development%20beginners/05%20Project%20Airbnb/house%2008/house_08_01.png"
               class="card-img-top"
-              alt="..."
             />
             <div class="card-body">
               <small class="text-start"> 📍 Koh Phangan • 4 Rooms</small>
